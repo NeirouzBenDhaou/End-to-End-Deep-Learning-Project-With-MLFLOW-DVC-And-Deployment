@@ -5,10 +5,10 @@ with open("README.md", "r", encoding="utf-8") as f:
 
 __version__ = "0.0.0"
 
-REPO_NAME = "Kidney-Disease-Classification-MLflow-DVC"
-AUTHOR_USER_NAME = "entbappy"
+REPO_NAME = "End-to-End-Deep-Learning-Project-With-MLFLOW-DVC-And-Deployment"
+AUTHOR_USER_NAME = "NeirouzBenDhaou"
 SRC_REPO = "cnnClassifier"
-AUTHOR_EMAIL = "entbappy73@gmail.com"
+AUTHOR_EMAIL =  "neirouz.bendhaou@supcom.u-carthage.tn"
 
 setuptools.setup(
     name=SRC_REPO,
@@ -18,5 +18,11 @@ setuptools.setup(
     description="A small python package for CNN app",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url=f"https://github.com/{AUTHOR_USER_NAME}/{REPO_NAME}",
+    url=f"https://github.com/{AUTHOR_USER_NAME}/{REPO_NAME}", 
+    project_urls={
+        "Bug Tracker": f"https://github.com/{AUTHOR_USER_NAME}/{REPO_NAME}/issues"
+    
+    },
+    package_dir={"":"src"},
+    packages=setuptools.find_packages(where="src")
 )
