@@ -1,0 +1,10 @@
+AUGMENTATION: True
+IMAGE_SIZE: [224,224,3]
+BATCH_SIZE: 16
+INCLUDE_TOP:  False # taking only conv layer 
+EPOCHS: 1 #marra kahaw yet3ada 3ala dataset lkolha 
+CLASSES: 2
+WEIGHTS: imagenet
+LEARNING_RATE: 0.01
+
+
